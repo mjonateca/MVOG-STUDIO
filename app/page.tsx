@@ -110,7 +110,7 @@ export default function Home() {
 
       {/* 6 — Process */}
       <section id="proceso" className="bg-tropical px-6 py-28 sm:py-36">
-        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.4fr]">
+        <div className="mx-auto max-w-6xl">
           <Reveal>
             <p className="text-[11px] font-medium uppercase tracking-widest3 text-wood">
               {t.process.label}
@@ -119,9 +119,16 @@ export default function Home() {
               {t.process.title}
             </h2>
           </Reveal>
-          <div>
+          {/* Flujo horizontal: fila conectada en desktop, grid compacto en móvil */}
+          <div className="mt-20 grid grid-cols-2 gap-x-6 gap-y-12 sm:grid-cols-4 lg:flex lg:items-start lg:gap-0">
             {t.process.steps.map((s, i) => (
-              <ProcessStep key={s.t} index={i} title={s.t} body={s.d} />
+              <ProcessStep
+                key={s.t}
+                index={i}
+                title={s.t}
+                body={s.d}
+                isLast={i === t.process.steps.length - 1}
+              />
             ))}
           </div>
         </div>
@@ -142,6 +149,50 @@ export default function Home() {
               {t.buyers.disclaimer}
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      {/* 7b — Quiénes somos */}
+      <section id="nosotros" className="bg-stone/30 px-6 py-28 sm:py-36">
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <Reveal>
+            <SectionLabel>{t.about.label}</SectionLabel>
+            <div className="mt-10 hidden space-y-8 lg:block">
+              {t.about.stats.map((s) => (
+                <div key={s.l} className="border-t hairline pt-4">
+                  <p className="font-display text-5xl font-light text-tropical">{s.n}</p>
+                  <p className="mt-1 text-xs font-light uppercase tracking-widest2 text-charcoal/55">
+                    {s.l}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+          <div>
+            <Reveal>
+              <h2 className="font-display text-4xl font-light leading-tight text-charcoal sm:text-5xl">
+                {t.about.title}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-8 max-w-2xl text-base font-light leading-relaxed text-charcoal/75">
+                {t.about.p1}
+              </p>
+              <p className="mt-5 max-w-2xl font-display text-2xl font-light italic leading-snug text-tropical">
+                {t.about.p2}
+              </p>
+            </Reveal>
+            <Reveal delay={0.15} className="mt-10 grid grid-cols-3 gap-6 lg:hidden">
+              {t.about.stats.map((s) => (
+                <div key={s.l} className="border-t hairline pt-3">
+                  <p className="font-display text-3xl font-light text-tropical">{s.n}</p>
+                  <p className="mt-1 text-[10px] font-light uppercase tracking-widest2 text-charcoal/55">
+                    {s.l}
+                  </p>
+                </div>
+              ))}
+            </Reveal>
+          </div>
         </div>
       </section>
 

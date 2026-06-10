@@ -13,6 +13,7 @@ export default function Header() {
     { href: "/#modelo", label: t.nav.model },
     { href: "/projects/casa-174", label: t.nav.project },
     { href: "/#proceso", label: t.nav.process },
+    { href: "/#nosotros", label: t.nav.about },
     { href: "/#contacto", label: t.nav.contact },
   ];
 

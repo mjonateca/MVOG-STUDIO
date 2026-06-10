@@ -7,6 +7,7 @@ export const dict = {
       model: "Modelo",
       project: "Casa 174",
       process: "Proceso",
+      about: "Nosotros",
       contact: "Contacto",
       tagline: "Boutique Development Studio",
     },
@@ -92,6 +93,17 @@ export const dict = {
       body: "MVOG trabaja por proyecto con estudios de arquitectura, constructoras especializadas y asesores técnicos. Cada villa define su propio equipo.",
       roles: ["Arquitectura", "Construcción", "Ingeniería", "Paisajismo", "Legal y fiscal"],
     },
+    about: {
+      label: "Quiénes somos",
+      title: "Desarrollamos cada villa como si fuéramos a vivir en ella.",
+      p1: "Detrás de MVOG estamos Manuel y Vinelis. Llevamos diez años viviendo en Punta Cana, y más de seis años de experiencia combinada en el desarrollo de real estate en la zona. Conocemos este territorio no desde un despacho, sino desde dentro: sus suelos, su luz, su mercado y su gente.",
+      p2: "Estamos enamorados del diseño. Por eso cada decisión de cada proyecto pasa por una sola pregunta: ¿viviríamos nosotros aquí? Si la respuesta no es un sí rotundo, no se construye.",
+      stats: [
+        { n: "10", l: "años viviendo en Punta Cana" },
+        { n: "6+", l: "años de experiencia combinada en desarrollo" },
+        { n: "1", l: "villa al año, con dedicación total" },
+      ],
+    },
     contact: {
       label: "Contacto",
       title: "Hablemos de la próxima villa.",
@@ -102,7 +114,8 @@ export const dict = {
       interests: ["Comprar", "Invertir", "Colaborar", "Otro"],
       message: "Mensaje",
       send: "Enviar mensaje",
-      sent: "Mensaje preparado. Te responderemos en breve.",
+      sent: "Mensaje enviado. Te responderemos en breve.",
+      error: "No se pudo enviar. Inténtalo de nuevo o escríbenos directamente.",
     },
     footer: {
       entity: "MVOG SRL",
@@ -135,6 +148,7 @@ export const dict = {
       model: "Model",
       project: "Casa 174",
       process: "Process",
+      about: "About",
       contact: "Contact",
       tagline: "Boutique Development Studio",
     },
@@ -220,6 +234,17 @@ export const dict = {
       body: "MVOG works per project with architecture studios, specialized builders and technical advisors. Each villa defines its own team.",
       roles: ["Architecture", "Construction", "Engineering", "Landscaping", "Legal & tax"],
     },
+    about: {
+      label: "Who we are",
+      title: "We develop each villa as if we were going to live in it.",
+      p1: "Behind MVOG are Manuel and Vinelis. We have lived in Punta Cana for ten years, with over six years of combined experience in real estate development in the area. We know this territory not from an office, but from within: its land, its light, its market and its people.",
+      p2: "We are in love with design. That's why every decision in every project goes through a single question: would we live here? If the answer isn't a resounding yes, it doesn't get built.",
+      stats: [
+        { n: "10", l: "years living in Punta Cana" },
+        { n: "6+", l: "years of combined development experience" },
+        { n: "1", l: "villa a year, with total dedication" },
+      ],
+    },
     contact: {
       label: "Contact",
       title: "Let's talk about the next villa.",
@@ -230,7 +255,8 @@ export const dict = {
       interests: ["Buy", "Invest", "Collaborate", "Other"],
       message: "Message",
       send: "Send message",
-      sent: "Message ready. We'll get back to you shortly.",
+      sent: "Message sent. We'll get back to you shortly.",
+      error: "Couldn't send. Please try again or write to us directly.",
     },
     footer: {
       entity: "MVOG SRL",

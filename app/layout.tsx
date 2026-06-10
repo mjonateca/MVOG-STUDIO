@@ -28,12 +28,31 @@ export const metadata: Metadata = {
     "real estate",
     "Casa 174",
   ],
+  metadataBase: new URL("https://mvog-studio.vercel.app"),
   openGraph: {
     title: "MVOG · Boutique Development Studio",
     description:
       "Una villa al año. Ninguna repetida. Villas de autor en el Caribe, desarrolladas con criterio.",
     type: "website",
     locale: "es_DO",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MVOG · Boutique Development Studio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MVOG · Boutique Development Studio",
+    description:
+      "Una villa al año. Ninguna repetida. Villas de autor en el Caribe.",
+    images: ["/og.jpg"],
+  },
+  icons: {
+    apple: "/apple-icon.png",
   },
 };
 
